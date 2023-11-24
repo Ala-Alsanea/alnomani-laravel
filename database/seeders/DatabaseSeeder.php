@@ -19,5 +19,19 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
             'password'=> '123'
         ]);
+
+        \App\Models\Brand::factory()->create([
+            'name' => 'مرسيديس',
+        ]);
+
+        \App\Models\Brand::factory()->create([
+            'name' => 'لاندلوفر',
+        ]);
+
+
+        \App\Models\Type::factory()->create([
+            'name' => 'مقود',
+        ]);
+
     }
 }
