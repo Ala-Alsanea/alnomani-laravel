@@ -134,7 +134,7 @@ section.home-two-banner {
     color: #FFF;
     font-size: 14px;
     padding: 10px 25px;
-    background: #E85230;
+    background: #c7282c;
     border-radius: 5px;
     display: inline-block;
     opacity: 0;
@@ -263,7 +263,7 @@ home three
     border-radius: 50%;
 }
 .banner-three .owl-theme .owl-dots .owl-dot.active span {
-    background: none repeat scroll 0 0 #E85230;
+    background: none repeat scroll 0 0 #c7282c;
     width: 10px;
     height: 10px;
 }
@@ -344,6 +344,6 @@ home four
         width: 100%;
         border-radius: 0;
     }
-    
+
 }
 

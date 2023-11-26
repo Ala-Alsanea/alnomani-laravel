@@ -42,14 +42,14 @@
 
 /* divider */
 .divider{
-    padding-top: 70px;
+    /* padding-top: 70px; */
     padding-bottom: 90px;
 }
 .divider-container{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 75px 70px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 .divider-content h4{
     color: #FFF;
@@ -92,7 +92,7 @@
 
 }
 .divider-two-container .content-two{
-    background: #E85230;
+    background: #c7282c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,7 +108,7 @@
     font-weight: 700;
 }
 .divider-two-container .content-two a:hover{
-    color: #E85230;
+    color: #c7282c;
 }
 .divider-two-contant span {
     position: absolute;
@@ -128,14 +128,14 @@
     position: relative;
     width: 100%;
     height: 850px;
-    background: #E85230;
+    background: #c7282c;
     border-radius: 10px;
     overflow: hidden;
 }
 .wheels-add-top-img{
     width: 100%;
     height: 296px;
-    
+
 }
 .wheels-add-top-img img{
     border-top-left-radius: 10px;
@@ -223,7 +223,7 @@
 /* home-two-divider-2 */
 .home-two-divider-2{
     padding-bottom: 0;
-} 
+}
 .home-two-divider-2 .divider-container{
     background-repeat: no-repeat;
     background-size: cover;

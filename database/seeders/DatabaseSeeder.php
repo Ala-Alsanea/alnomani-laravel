@@ -22,10 +22,17 @@ class DatabaseSeeder extends Seeder
 
         \App\Models\Brand::factory()->create([
             'name' => 'مرسيديس',
+            'image'=> 'images/brand/merc.svg',
         ]);
 
         \App\Models\Brand::factory()->create([
             'name' => 'لاندلوفر',
+            'image' => 'images/brand/landrover.svg',
+        ]);
+
+        \App\Models\Brand::factory()->create([
+            'name' => 'borgwarner',
+            'image' => 'images/brand/BWA_BIG.svg',
         ]);
 
 

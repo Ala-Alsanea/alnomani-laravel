@@ -6,7 +6,7 @@
 }
 .popular-sale{
     display: inline-block;
-    background: #E85230;
+    background: #c7282c;
     border-radius: 49px;
     padding: 2px 10px;
     font-weight: 400;
@@ -58,7 +58,7 @@
     padding-bottom: 101px;
 }
 .new-product{
-    background: #F7FAFF;
+    /* background: #F7FAFF; */
 }
 .week-deal-three{
     padding-bottom: 0;
@@ -91,7 +91,7 @@
 
 /* new product */
 .new-product .product-block-one {
-    background-color: #F7FAFF;
+    /* background-color: #F7FAFF; */
 }
 /* new product */
 

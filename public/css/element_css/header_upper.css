@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .header-style-two .header-upper .inner-container {
     min-height: 131px;
@@ -16,7 +16,7 @@
 .ex_shop_header .header-upper .logo_menu{
     display: flex;
     align-items: center;
-    gap: 59px;
+    gap: 60px;
 }
 .ex_shop_header .header-upper .logo-box {
     z-index: 10;
@@ -147,10 +147,10 @@
 }
 .main-header .header-upper .search-box button:before {
     background-color: #e35711;
-}  
+}
 .main-header.ex_shop_header .header-upper .right-info li a:hover {
     color: #e35711;
-}  
+}
 .ex_shop_header .header-phone-number a:hover{
     color: #e35711;
 }
@@ -171,16 +171,20 @@
 /* home 4 */
 .header-style-four .header-upper .logo_menu {
     background: #c7282c;
-    padding-left: 23px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    padding: 10px 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+
+    /* border-bottom-left-radius: 10px; */
 }
 .header-style-four .header-upper .logo-box .logo {
-    padding: 16px 0px;
+    padding: 1px 0px;
 }
 .header-style-four .main-menu .navigation > li > a {
-    padding: 30px 0px;
-    padding-right: 60px;
+    padding: 30px 20px;
+    /* padding-right: 60px; */
     color: #ffffff;
 }
 .header-style-four .main-menu .navigation>li>a:hover, .header-style-four .main-menu .navigation>li>a.active{
@@ -211,7 +215,7 @@
 
 
 /* ========================================
-responsive 
+responsive
 ========================================== */
 @media only screen and (max-width: 1366px){
     .ex_shop_header .main-menu .navigation>li {
@@ -253,7 +257,7 @@ responsive
 
 }
 
-@media only screen and (min-width: 1199px) and (max-width: 1366px){ 
+@media only screen and (min-width: 1199px) and (max-width: 1366px){
 .ex_shop_header .header-upper .inner-container {
     justify-content: center;
      }
@@ -285,7 +289,7 @@ responsive
     .header-style-four .main-menu .navigation > li > a {
         padding-right: 26px !important;
     }
-    
+
 }
 
 @media only screen and (max-width: 1024px){
@@ -343,7 +347,7 @@ responsive
         padding-right: 23px;
     }
     /* header four */
-    
+
 }
 
 @media only screen and (max-width: 991px){
@@ -354,7 +358,7 @@ responsive
         position: relative;
         right: 80px;
       }
-     
+
 }
 
 @media only screen and (min-width: 769px) and (max-width: 991px){

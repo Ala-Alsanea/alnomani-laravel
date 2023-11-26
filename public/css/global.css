@@ -24,7 +24,7 @@
 
 body {
   font-size:16px;
-  color:#8B929A;
+  color:#212121;
   line-height:28px;
   font-weight:400;
   background:#ffffff;
@@ -108,7 +108,7 @@ input,button,select,textarea{
 ul,li{
   list-style:none;
   padding:0px;
-  margin:0px; 
+  margin:0px;
 }
 
 input{
@@ -520,7 +520,7 @@ img {
   border-radius: 30px;
   z-index: -1;
   transition: all 500ms ease;
-  
+
 }
 
 .theme-btn-seven:hover:before{
@@ -815,7 +815,7 @@ img {
 }
 
 :root {
-  --theme-color: #E85230;
+  --theme-color: #c7282c;
 }
 .theme-color {
   color: var(--theme-color);
@@ -966,7 +966,7 @@ img {
   -o-transition: all 900ms ease;
 }
 .tabs-box .tab.active-tab{
-  display:block;  
+  display:block;
 }
 .tabs-box .tab{
   transform:scale(0.9,0.9) translateY(0px);
@@ -977,16 +977,16 @@ img {
 /* Color */
 a:hover,
 a {
-  color: #E85230;
+  color: #c7282c;
 }
 .btn-style-one {
-  background-color: #E85230;
+  background-color: #c7282c;
 }
 .banner-slider-button-next:hover {
-  background-color: #E85230;
+  background-color: #c7282c;
 }
 .banner-slider-button-prev:hover {
-  background-color: #E85230;
+  background-color: #c7282c;
 }
 .main-header .outer-box{
   position: relative;

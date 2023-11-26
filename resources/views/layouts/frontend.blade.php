@@ -8,7 +8,7 @@
     <title>{{ $title ?? 'Page Title' }}</title>
 
     <!-- Fav Icon -->
-    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="fav.png" type="image/x-icon">
 
     <!-- Stylesheets -->
     <link href="css/font_awesome_all.css" rel="stylesheet">
@@ -60,7 +60,7 @@
 <body>
 
     <div class="boxed_wrapper">
-        @livewire('components.preloader')
+        {{-- @livewire('components.preloader') --}}
         @livewire('components.nav')
 
         {{ $slot }}

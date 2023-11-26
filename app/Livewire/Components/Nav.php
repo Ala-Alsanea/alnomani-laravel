@@ -52,11 +52,12 @@ class Nav extends Component
             <div class="header-upper">
                 <div class="auto-container">
                     <div class="inner-container">
-                        <!--Logo-->
+                        <!-- nav -->
                         <div class="logo_menu">
+                            <!--Logo-->
                             <div class="logo-box">
-                                <div class="logo"><a href="index-4.html"><img src="images/logoo.jpg" height="60"
-                                            width="60" alt="logo"></a></div>
+                                <div class="logo"><a href="index-4.html"><img src="images/logoo.jpg"
+                                            width="80" alt="logo"></a></div>
                             </div>
 
                             <div class="menu-area clearfix">
@@ -64,11 +65,11 @@ class Nav extends Component
                                     <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                         <ul class="navigation clearfix home-menu">
 
-                                            <li><a href="index.html">القائمة الرئيسية</a></li>
-                                            <li><a href="shop.html">السوق</a></li>
-                                            <li><a href="tires-wheels.html">الاطارات والعجلات </a></li>
-                                            <li><a href="interior-accessories.html">القطع الداخلية </a></li>
-                                            <li><a href="contact.html">تواصل معنا </a></li>
+                                            <li><a href="#">القائمة الرئيسية</a></li>
+                                            <li><a href="#">السوق</a></li>
+                                            <li><a href="#">الاطارات والعجلات </a></li>
+                                            <li><a href="#">القطع الداخلية </a></li>
+                                            <li><a href="#">تواصل معنا </a></li>
 
                                         </ul>
                                     </div>
@@ -83,13 +84,12 @@ class Nav extends Component
                             </div>
                         </div>
 
-                        <ul class="right-info">
+                        <!-- <ul class="right-info"  >
                             <li>
                                 <div class="shopping-cart"><i class="icon-shopping-cart"></i><span class="count"></span>
                                 </div>
                             </li>
-
-                        </ul>
+                        </ul> -->
 
                     </div>
                 </div>

@@ -18,11 +18,11 @@ class Divider extends Component
                         <div class="divider-two-container">
                             <div class="divider-two-contant contant-one">
                                 <p></p>
-                                <span>$</span>
+                                <a href="#"></a>
                             </div>
                             <div class="divider-two-contant content-two">
                                 <p> </p>
-                                <a href="#"></a>
+                                <!-- <a href="#"></a> -->
                             </div>
                         </div>
                     </div>
