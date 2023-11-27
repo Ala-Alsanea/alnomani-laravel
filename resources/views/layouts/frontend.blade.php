@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ $title ?? 'Page Title' }}</title>
-
+    <title>شركة النعماني لقطع غيار مرسيدس ولاندروفر</title>
     <!-- Fav Icon -->
     <link rel="icon" href="fav.png" type="image/x-icon">
 
