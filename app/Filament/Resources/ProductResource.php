@@ -26,6 +26,7 @@ class ProductResource extends Resource
                 Forms\Components\Toggle::make('avalibale')
                     ->label(__('avalibale'))
                     ->required()
+                    ->default(1)
                     ->onColor('success')
                     ->offColor('danger'),
                 Forms\Components\TextInput::make('name')

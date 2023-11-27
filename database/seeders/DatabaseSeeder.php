@@ -37,7 +37,20 @@ class DatabaseSeeder extends Seeder
 
 
         \App\Models\Type::factory()->create([
-            'name' => 'مقود',
+            'name' => 'القطع الداخليه',
+        ]);
+
+        \App\Models\Type::factory()->create([
+            'name' => 'القطع الخارجيه',
+        ]);
+
+        \App\Models\Type::factory()->create([
+            'name' => 'الاطارات والعجلات',
+        ]);
+
+        $this->call([
+
+            AboutUsSeeder::class,
         ]);
 
     }

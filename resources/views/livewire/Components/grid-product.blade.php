@@ -1,11 +1,14 @@
  <div>
 
-     <!-- divider-with-image -->
-     @livewire('components.divider-with-image')
-     <!-- divider-with-image -->
+    @if (!$type_id)
+
+        <!-- divider-with-image -->
+        @livewire('components.divider-with-image')
+        <!-- divider-with-image -->
+    @endif
 
      <!-- items -->
-     <section class="item mt-9">
+     <section class="week-deal new-product">
          <div class="auto-container">
              <div class="common-section-title">
                  <div class="common-section-title-left">
@@ -23,7 +26,7 @@
                              </g>
                          </svg>
 
-                         <h4>المنتجات</h4>
+                         <h4>{{$title}}</h4>
                      </div>
                  </div>
                  <div class="common-more-btn">

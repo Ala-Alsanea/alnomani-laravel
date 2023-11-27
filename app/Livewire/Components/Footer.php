@@ -22,7 +22,7 @@ class Footer extends Component
                             <div class="col-lg-3 col-md-6">
                                 <div class="footer-widget footer-logo-widget">
                                     <div class="footer-logo">
-                                        <img src="images/llogoo.png" height="200" width="200" alt="logo">
+                                        <img src="{{asset('images/llogoo.png')}}" height="200" width="200" alt="logo">
                                     </div>
 
                                 </div>
@@ -35,7 +35,7 @@ class Footer extends Component
                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                        <!-- <li><a href="#"><i class="fab fa-dribbble"></i></a></li> -->
                                     </ul>
                                 </div>
                             </div>

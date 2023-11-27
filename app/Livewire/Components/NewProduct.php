@@ -9,7 +9,7 @@ class NewProduct extends Component
 {
     public function render()
     {
-        $newProducts = Product::where('avalibale', 1)->take(4)->get();
+        $newProducts = Product::orderBy("updated_at", 'desc')->where('avalibale', 1)->take(4)->get();
         // dd($newProducts);
         return view(
             'livewire.Components.new-product',
