@@ -14,6 +14,7 @@ class Product extends Model
         'name',
         'image',
         'year',
+        'avalibale',
         'type_id',
         'brand_id',
     ];
