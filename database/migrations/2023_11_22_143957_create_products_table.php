@@ -18,7 +18,7 @@ return new class extends Migration
             $table->date('year')->nullable();
             $table->foreignId('type_id')->constrained()->cascadeOnUpdate();
             $table->foreignId('brand_id')->constrained()->cascadeOnUpdate();
-            $table->boolean('avalibale')->nullable();
+            $table->boolean('avalibale')->default(0);
 
             $table->timestamps();
         });

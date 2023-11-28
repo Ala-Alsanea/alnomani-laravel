@@ -20,6 +20,9 @@ class ContactMassageResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $navigationGroup = 'Contact page';
+
+
     public static function form(Form $form): Form
     {
         return $form
@@ -90,6 +93,11 @@ class ContactMassageResource extends Resource
     }
 
     public static function canCreate(): bool
+    {
+        return false;
+    }
+
+    public static function canEdit(Model $record): bool
     {
         return false;
     }

@@ -17,8 +17,8 @@ class GridProduct extends Component
         {
 
             $products = Product::where('type_id', $this->type_id)->where('avalibale', 1)->get();
-            $this->title = Type::find($this->type_id)->name;
             if (!$products->isEmpty()) {
+                $this->title = Type::find($this->type_id)->name;
 
                 // dd($this->title);
                 return view(

@@ -19,6 +19,9 @@ class ProductResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $navigationGroup = 'content';
+
+
     public static function form(Form $form): Form
     {
         return $form
@@ -26,7 +29,6 @@ class ProductResource extends Resource
                 Forms\Components\Toggle::make('avalibale')
                     ->label(__('avalibale'))
                     ->required()
-                    ->default(1)
                     ->onColor('success')
                     ->offColor('danger'),
                 Forms\Components\TextInput::make('name')
@@ -65,7 +67,9 @@ class ProductResource extends Resource
                     ->date()
                     ->sortable(),
                 Tables\Columns\ToggleColumn::make('avalibale')
-                    ->label(__('avalibale')),
+                    ->label(__('avalibale'))
+                ->onColor('success')
+                ->offColor('danger'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

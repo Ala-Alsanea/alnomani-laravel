@@ -20,6 +20,10 @@ class AboutUsResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $navigationGroup = 'About us page';
+
+
+
     public static function form(Form $form): Form
     {
         return $form
