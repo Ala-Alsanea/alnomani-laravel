@@ -26,11 +26,11 @@ class ProductResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\Toggle::make('avalibale')
-                    ->label(__('avalibale'))
-                    ->required()
-                    ->onColor('success')
-                    ->offColor('danger'),
+                // Forms\Components\Toggle::make('avalibale')
+                //     ->label(__('avalibale'))
+                //     ->required()
+                //     ->onColor('success')
+                //     ->offColor('danger'),
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
@@ -68,8 +68,8 @@ class ProductResource extends Resource
                     ->sortable(),
                 Tables\Columns\ToggleColumn::make('avalibale')
                     ->label(__('avalibale'))
-                ->onColor('success')
-                ->offColor('danger'),
+                    ->onColor('success')
+                    ->offColor('danger'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
