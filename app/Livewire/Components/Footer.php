@@ -29,8 +29,8 @@ class Footer extends Component
                             </div>
                             <div class="col-lg-3 col-md-6">
                                 <div class="footer-widget footer-services-links-widget">
-                                    <h4 class="footer-widget-title">من نحن</h4>
-                                    <P>شركة قطع غيار سيارات مرسيدس ولاندروفر في الرياض-السعودية </P>
+                                    <h4 class="footer-widget-title">{{__('about us')}}</h4>
+                                    <P>{{__('Mercedes and Land Rover spare parts company in Riyadh, Saudi Arabia')}}</P>
                                     <ul class="social-icon">
                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -41,15 +41,15 @@ class Footer extends Component
                             </div>
                             <div class="col-lg-2 col-md-6 offset-lg-1">
                                 <div class="footer-widget footer-links-widget">
-                                    <h4 class="footer-widget-title">ساعات العمل</h4>
+                                    <h4 class="footer-widget-title">{{__('work hours')}}</h4>
                                     <ul class="lsit">
-                                        <li><a href="#">السبت : 8:00ص - 7:00م</a></li>
-                                        <li><a href="#">الاحد : 8:00ص - 7:00م</a></li>
-                                        <li><a href="#">الاثنين : 8:00ص - 7:00م</a></li>
-                                        <li><a href="#">الثلاثاء : 8:00ص - 7:00م</a></li>
-                                        <li><a href="#">الاربعاء : 8:00ص - 7:00م</a></li>
-                                        <li><a href="#">الخميس : 8:00ص - 7:00م</a></li>
-                                        <li><a href="#">الجمعة : مغلق</a></li>
+                                        <li><a href="#">{{__('Saturday')}} : 8:00ص - 7:00م</a></li>
+                                        <li><a href="#">{{__('Sunday')}} : 8:00ص - 7:00م</a></li>
+                                        <li><a href="#">{{__('Monday')}} : 8:00ص - 7:00م</a></li>
+                                        <li><a href="#">{{__('Tuesday')}} : 8:00ص - 7:00م</a></li>
+                                        <li><a href="#">{{__('Wednesday')}} : 8:00ص - 7:00م</a></li>
+                                        <li><a href="#">{{__('Thursday')}} : 8:00ص - 7:00م</a></li>
+                                        <li><a href="#">{{__('Friday')}} : مغلق</a></li>
 
                                     </ul>
                                 </div>
@@ -58,16 +58,16 @@ class Footer extends Component
 
                             <div class="col-lg-3 col-md-6">
                                 <div class="footer-widget footer-contact-widget">
-                                    <h4 class="footer-widget-title">تواصل معنا</h4>
+                                    <h4 class="footer-widget-title">{{__('call us')}}</h4>
                                     <ul>
-                                        <li><a href="#">الاتصال</a></li>
+                                        <li><a href="#">{{__('calling')}}</a></li>
                                         <li><a href="tel:0502115994" class="footer-contact-info">0502115994 <br>
                                                 0112040824</a></li>
-                                        <li><a href="#">الايميل</a></li>
+                                        <li><a href="#">{{__('email')}}</a></li>
                                         <li><a href="mailto: www.alnomaniparts.com" class="footer-contact-info">
                                                 www.alnomaniparts.com</a></li>
-                                        <li><a href="#">العنوان</a></li>
-                                        <li><a href="#" class="footer-contact-info"> الرياض-السعودية</a></li>
+                                        <li><a href="#">{{__('address')}}</a></li>
+                                        <li><a href="#" class="footer-contact-info">{{__('Al Riyadh, Saudi Arabia')}}</a></li>
 
 
                                     </ul>

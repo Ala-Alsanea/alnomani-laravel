@@ -18,13 +18,13 @@
                         </div>
                         <div class="home-two-wrapper">
                             <div class="home-two-wrapper-inner">
-                                <h6>متجر قطع الغيار عبر الإنترنت</h6>
+                                <h6>{{__('Online spare parts store')}}</h6>
                                 <h2>{{$banner->main_text}}</h2>
-                                <p>كل ما تحتاجة سيارتك واكثر. </p>
+                                <p>{{__('Everything your car needs and more')}} </p>
                                 {{-- button --}}
                                 <div class="btn-box clearfix">
                                     <a href="{{$banner->link}}" class="theme-btn btn-style-one">
-                                        المزيد
+                                        {{__('more')}}
                                         <i class="flaticon-right-arrow"></i>
                                     </a>
                                 </div>

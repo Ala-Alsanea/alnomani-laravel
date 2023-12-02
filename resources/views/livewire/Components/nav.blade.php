@@ -5,14 +5,19 @@
         <div class="header-top">
             <div class="auto-container">
                 <div class="wrapper-box">
+                    <div>
+                        {{-- @include('backpack.language-switcher::language-switcher') --}}
+
+                        @livewire('Components.language-switcher')
+                    </div>
                     <div class="left-column">
                         <ul class="contact-info">
-                            <li><a href="#0">نبذة عنا </a></li>
+                            {{-- <li><a href="#0">نبذة عنا </a></li> --}}
                         </ul>
                     </div>
                     <div class="right-column">
                         <div class="help-info">
-                            للمساعدة? <span> اتصل بنا: </span> <a href="tel:0112040824" class="help-info-number">
+                            {{__('help?')}} <span> {{__("call us:")}} </span> <a href="tel:0112040824" class="help-info-number">
                                 0502115994</a> <span> or </span> <a
                                 href="www.alnomaniparts.com">www.alnomaniparts.com</a>
                         </div>
@@ -47,15 +52,15 @@
 
                         <div class="menu-area clearfix">
                             <nav class="main-menu clearfix navbar-expand-md navbar-light">
-                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                    <ul class="navigation clearfix home-menu">
+                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent" >
+                                    <ul class="navigation clearfix home-menu" >
 
-                                        <li><a href={{url('contact')}}>تواصل معنا </a></li>
+                                        <li><a href={{url('contact')}}>{{__('contact us')}} </a></li>
                                         @foreach ($types as $type)
                                             <li><a href={{ url("/$type->id/product") }}>{{ $type->name }}</a></li>
                                         @endforeach
-                                        <li><a href={{url('about-us')}}>من نحن</a></li>
-                                        <li><a href={{ url('/') }}>القائمة الرئيسية</a></li>
+                                        <li><a href={{url('about-us')}}>{{__('about us')}}</a></li>
+                                        <li><a href={{ url('/') }}>{{__('home')}}</a></li>
 
                                     </ul>
                                 </div>

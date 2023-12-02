@@ -44,8 +44,14 @@ class TypeResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
-                ->label(__('name'))
+                Forms\Components\TextInput::make('name_ar')
+                    ->label(__('name'))
+
+                    ->required()
+                    ->maxLength(255),
+
+                Forms\Components\TextInput::make('name_en')
+                    ->label('name english')
 
                     ->required()
                     ->maxLength(255),
@@ -56,9 +62,11 @@ class TypeResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name')
-                ->label(__('name'))
-
+                Tables\Columns\TextColumn::make('name_ar')
+                    ->label(__('name'))
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('name_en')
+                    ->label('name english')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()

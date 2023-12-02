@@ -75,10 +75,10 @@
 
 
                                      <div class="price-container">
-                                         {{ 'العلامة التجارية: ' . $product->brand->name }}
+                                         {{ __('brand').': ' . $product->brand->name }}
                                      </div>
                                      <div class="price-container">
-                                         {{ 'النوع: ' . $product->type->name }}
+                                         {{ __('type').': '. $product->type->name }}
                                      </div>
 
                                      {{-- <div class="product-block-one-heart">

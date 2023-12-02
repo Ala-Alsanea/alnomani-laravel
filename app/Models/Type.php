@@ -11,7 +11,8 @@ class Type extends Model
     use HasFactory;
 
     public $fillable = [
-        'name',
+        'name_ar',
+        'name_en',
 
     ];
 

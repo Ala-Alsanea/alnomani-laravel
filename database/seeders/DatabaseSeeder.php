@@ -37,15 +37,15 @@ class DatabaseSeeder extends Seeder
 
 
         \App\Models\Type::factory()->create([
-            'name' => 'القطع الداخليه',
+            'name_ar' => 'القطع الداخليه',
         ]);
 
         \App\Models\Type::factory()->create([
-            'name' => 'القطع الخارجيه',
+            'name_ar' => 'القطع الخارجيه',
         ]);
 
         \App\Models\Type::factory()->create([
-            'name' => 'الاطارات والعجلات',
+            'name_ar' => 'الاطارات والعجلات',
         ]);
 
         $this->call([

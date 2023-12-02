@@ -17,7 +17,7 @@
                                      fill="#c7282c"></path>
                              </g>
                          </svg>
-                         <h4>المنتجات الحديثة</h4>
+                         <h4>{{__('new products')}}</h4>
                      </div>
                  </div>
                  <div class="common-more-btn">
@@ -41,10 +41,10 @@
                              <div class="product-block-one-cintent">
 
                                  <div class="price-container">
-                                     {{ 'العلامة التجارية: ' . $product->brand->name }}
+                                     {{ __('brand').': ' . $product->brand->name }}
                                  </div>
                                   <div class="price-container">
-                                     {{ 'النوع: ' . $product->type->name }}
+                                     {{ __('type').': ' . $product->type->name }}
                                  </div>
                              </div>
                              {{-- <div class="product-block-one-heart">

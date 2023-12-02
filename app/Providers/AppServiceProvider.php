@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use BezhanSalleh\FilamentLanguageSwitch\LanguageSwitch;
+use BezhanSalleh\FilamentLanguageSwitch\Enums\Placement;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,7 +25,15 @@ class AppServiceProvider extends ServiceProvider
         //
         LanguageSwitch::configureUsing(function (LanguageSwitch $switch) {
             $switch
-                ->locales(['ar', 'en']); // also accepts a closure
+                ->visible(outsidePanels: true)
+                ->outsidePanelPlacement(Placement::TopLeft)
+                ->outsidePanelRoutes([
+                    'profile',
+                    'home',
+                    // Additional custom routes where the switcher should be visible outside panels
+                ])
+                ->locales(['ar', 'en'])
+                ->circular(); // also accepts a closure
         });
     }
 }

@@ -83,7 +83,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ar',
 
     /*
     |--------------------------------------------------------------------------
@@ -99,6 +99,19 @@ return [
     'fallback_locale' => 'en',
 
     /*
+|--------------------------------------------------------------------------
+| Available locales
+|--------------------------------------------------------------------------
+|
+| List all locales that your application works with
+|
+*/
+    'available_locales' => [
+        'English' => 'en',
+        'Arabic' => 'ar',
+    ],
+
+    /*
     |--------------------------------------------------------------------------
     | Faker Locale
     |--------------------------------------------------------------------------
@@ -108,6 +121,8 @@ return [
     | localized telephone numbers, street address information and more.
     |
     */
+
+
 
     'faker_locale' => 'en_US',
 

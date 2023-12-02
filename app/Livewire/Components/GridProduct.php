@@ -9,7 +9,12 @@ use Livewire\Component;
 class GridProduct extends Component
 {
     public $type_id;
-    public $title = 'منتجات';
+    public $title ;
+
+    public function mount()
+    {
+        $this->title=__('product');
+    }
 
     public function render()
     {
