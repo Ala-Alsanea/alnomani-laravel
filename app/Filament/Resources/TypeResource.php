@@ -19,14 +19,34 @@ class TypeResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    protected static ?string $navigationGroup = 'content';
 
+    public static function getNavigationLabel(): string
+    {
+        return __('type');
+    }
+
+    public static function getPluralLabel(): string
+    {
+        return __('type');
+    }
+
+    public static function getModelLabel(): string
+    {
+        return __('type');
+    }
+
+    public static function getNavigationGroup(): string
+    {
+        return __('content');
+    }
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
+                ->label(__('name'))
+
                     ->required()
                     ->maxLength(255),
             ]);
@@ -37,6 +57,8 @@ class TypeResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
+                ->label(__('name'))
+
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
@@ -77,4 +99,15 @@ class TypeResource extends Resource
             'edit' => Pages\EditType::route('/{record}/edit'),
         ];
     }
+
+    // public static function canCreate(): bool
+    // {
+    //     // dd(Type::all()->count());
+    //     if(Type::all()->count()==3)
+    //     {
+    //         return false;
+    //     }
+    //     return true;
+
+    // }
 }

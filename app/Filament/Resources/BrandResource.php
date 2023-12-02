@@ -19,17 +19,36 @@ class BrandResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    protected static ?string $navigationGroup = 'content';
+    public static function getNavigationLabel(): string
+    {
+        return __('brand');
+    }
 
+    public static function getPluralLabel(): string
+    {
+        return __('brand');
+    }
+
+    public static function getModelLabel(): string
+    {
+        return __('brand');
+    }
+
+    public static function getNavigationGroup(): string
+    {
+        return __('content');
+    }
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
+                    ->label(__('name'))
                     ->required()
                     ->maxLength(255),
                 Forms\Components\FileUpload::make('image')
+                    ->label(__('image'))
                     ->image()
                     ->required()
                     ->imageEditor(),
@@ -41,8 +60,10 @@ class BrandResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
+                    ->label(__('name'))
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('image')
+                    ->label(__('image'))
                     ->square()
                     ->height(100),
                 Tables\Columns\TextColumn::make('created_at')

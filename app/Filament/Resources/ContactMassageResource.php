@@ -20,8 +20,25 @@ class ContactMassageResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    protected static ?string $navigationGroup = 'Contact page';
+    public static function getNavigationLabel(): string
+    {
+        return __('contact');
+    }
 
+    public static function getPluralLabel(): string
+    {
+        return __('contact');
+    }
+
+    public static function getModelLabel(): string
+    {
+        return __('contact');
+    }
+
+    public static function getNavigationGroup(): string
+    {
+        return __('contact page');
+    }
 
     public static function form(Form $form): Form
     {

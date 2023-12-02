@@ -20,7 +20,26 @@ class AboutUsResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    protected static ?string $navigationGroup = 'About us page';
+
+    public static function getNavigationLabel(): string
+    {
+        return __('about us');
+    }
+
+    public static function getPluralLabel(): string
+    {
+        return __('about us');
+    }
+
+    public static function getModelLabel(): string
+    {
+        return __('about us');
+    }
+
+    public static function getNavigationGroup(): string
+    {
+        return __('about us page');
+    }
 
 
 
@@ -29,6 +48,7 @@ class AboutUsResource extends Resource
         return $form
             ->schema([
                 Forms\Components\MarkdownEditor::make('main_text')
+                    ->label(__('main_text'))
                     ->required()
                     ->maxLength(999),
             ]);
@@ -39,6 +59,7 @@ class AboutUsResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('main_text')
+                    ->label(__('main_text'))
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()

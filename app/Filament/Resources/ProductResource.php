@@ -19,8 +19,25 @@ class ProductResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    protected static ?string $navigationGroup = 'content';
+    public static function getNavigationLabel(): string
+    {
+        return __('product');
+    }
 
+    public static function getPluralLabel(): string
+    {
+        return __('product');
+    }
+
+    public static function getModelLabel(): string
+    {
+        return __('product');
+    }
+
+    public static function getNavigationGroup(): string
+    {
+        return __('content');
+    }
 
     public static function form(Form $form): Form
     {
@@ -32,19 +49,24 @@ class ProductResource extends Resource
                 //     ->onColor('success')
                 //     ->offColor('danger'),
                 Forms\Components\TextInput::make('name')
+                    ->label(__('name'))
                     ->required()
                     ->maxLength(255),
                 Forms\Components\Select::make('type_id')
+                    ->label(__('type'))
                     ->relationship('type', 'name')
                     ->required(),
                 Forms\Components\Select::make('brand_id')
+                    ->label(__('brand'))
                     ->relationship('brand', 'name')
                     ->required(),
                 Forms\Components\FileUpload::make('image')
+                    ->label(__('image'))
                     ->image()
                     ->required()
                     ->imageEditor(),
-                Forms\Components\DatePicker::make('year'),
+                Forms\Components\DatePicker::make('year')
+                    ->label(__('year')),
             ]);
     }
 
@@ -53,17 +75,25 @@ class ProductResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
+                ->label(__('name'))
+
                     ->searchable(),
                 Tables\Columns\TextColumn::make('type.name')
-                    ->numeric()
+                ->label(__('type'))
+
+
                     ->sortable(),
                 Tables\Columns\TextColumn::make('brand.name')
-                    ->numeric()
+                ->label(__('brand'))
                     ->sortable(),
                 Tables\Columns\ImageColumn::make('image')
+                ->label(__('image'))
+
                     ->square()
                     ->height(100),
                 Tables\Columns\TextColumn::make('year')
+                ->label(__('year'))
+
                     ->date()
                     ->sortable(),
                 Tables\Columns\ToggleColumn::make('avalibale')
