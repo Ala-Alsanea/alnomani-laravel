@@ -23,7 +23,7 @@ Route::get('/{type_id}/product', GridProduct::class);
 Route::get('/about-us', AboutUsPage::class);
 Route::get('/contact', ContactPage::class);
 
-Route::get('language/{locale}', function ($locale) {
+Route::get('/language/{locale}', function ($locale) {
 
     app()->setLocale($locale);
     // dd(app()->getLocale());

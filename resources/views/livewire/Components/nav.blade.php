@@ -57,7 +57,7 @@
 
                                         <li><a href={{url('contact')}}>{{__('contact us')}} </a></li>
                                         @foreach ($types as $type)
-                                            <li><a href={{ url("/$type->id/product") }}>{{ $type->name }}</a></li>
+                                            <li><a href={{ url("/$type->id/product") }}>{{ app()->getLocale() =='ar'? $type->name : $type->name_en }}</a></li>
                                         @endforeach
                                         <li><a href={{url('about-us')}}>{{__('about us')}}</a></li>
                                         <li><a href={{ url('/') }}>{{__('home')}}</a></li>

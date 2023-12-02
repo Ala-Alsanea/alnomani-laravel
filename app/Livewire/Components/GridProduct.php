@@ -23,7 +23,7 @@ class GridProduct extends Component
 
             $products = Product::where('type_id', $this->type_id)->where('avalibale', 1)->get();
             if (!$products->isEmpty()) {
-                $this->title = Type::find($this->type_id)->name;
+                $this->title = app()->getLocale() == 'ar' ? Type::find($this->type_id)->name : Type::find($this->type_id)->name_en ;
 
                 // dd($this->title);
                 return view(

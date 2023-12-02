@@ -3,7 +3,11 @@
     @if (!$type_id)
 
         <!-- divider-with-image -->
-        @livewire('components.divider-with-image')
+        @livewire('components.divider-with-image',
+        [
+        'title' => __('Find the perfect item for your car'),
+        'text' => __('We always meet your demands'),
+    ])
         <!-- divider-with-image -->
     @endif
 

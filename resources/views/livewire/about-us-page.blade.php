@@ -2,7 +2,7 @@
 
     <br><br>
     @livewire('components.divider-with-image', [
-        'title' => 'من نحن',
+        'title' => __('about us'),
         'text' => '',
     ])
     <br><br>

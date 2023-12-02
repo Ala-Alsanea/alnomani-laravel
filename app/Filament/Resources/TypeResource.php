@@ -44,7 +44,7 @@ class TypeResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name_ar')
+                Forms\Components\TextInput::make('name')
                     ->label(__('name'))
 
                     ->required()
@@ -62,7 +62,7 @@ class TypeResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name_ar')
+                Tables\Columns\TextColumn::make('name')
                     ->label(__('name'))
                     ->searchable(),
                 Tables\Columns\TextColumn::make('name_en')
