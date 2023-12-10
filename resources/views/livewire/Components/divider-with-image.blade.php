@@ -11,7 +11,7 @@
                 <p>{{ $text }}</p>
                 <!-- <a href="#" class="theme-btn btn-style-one">تسوق الان<i class="flaticon-right-arrow"></i></a> -->
             </div>
-            p
+
         </div>
         <!-- </div> -->
     </section>

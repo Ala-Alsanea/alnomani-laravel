@@ -1,6 +1,6 @@
 <div>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone={{$whatsapp}}." class="float"
+    <a href="https://api.whatsapp.com/send?phone={{$whatsapp}}&text=hi" class="float"
         style="position:fixed;
         width:60px;
         height:60px;
