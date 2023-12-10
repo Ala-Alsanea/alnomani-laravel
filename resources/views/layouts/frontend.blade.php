@@ -72,6 +72,7 @@
 
         {{ $slot }}
 
+        @livewire('components.whatsapp-floating-button')
         @livewire('components.footer')
     </div>
 

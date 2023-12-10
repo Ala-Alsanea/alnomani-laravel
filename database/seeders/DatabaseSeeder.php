@@ -53,6 +53,18 @@ class DatabaseSeeder extends Seeder
 
         ]);
 
+        \App\Models\ContactInfo::factory()->create([
+            'phone_1' => '0502115994',
+            'phone_2' => '0112040824',
+            'phone_whatsapp' => '0',
+            'email' => 'www.alnomaniparts.com',
+            'facebook_link' => '#',
+            'insta_link' => '#',
+
+
+
+        ]);
+
         $this->call([
 
             AboutUsSeeder::class,
