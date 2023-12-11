@@ -18,8 +18,10 @@
                     <div class="right-column">
                         <div class="help-info">
                             {{__('help?')}} <span> {{__("call us:")}} </span> <a href="tel:0112040824" class="help-info-number">
-                                0502115994</a> <span> or </span> <a
-                                href="www.alnomaniparts.com">www.alnomaniparts.com</a>
+                            {{$contact_info->phone_1}}
+                            </a>
+                            <span> or </span>
+                            <a href="mailto: {{$contact_info->email}}">{{$contact_info->email}}</a>
                         </div>
                         <!-- <div class="curency">
                                 <div class="language">

@@ -4,6 +4,7 @@ namespace App\Livewire\Components;
 
 use App\Models\Type;
 use Livewire\Component;
+use App\Models\ContactInfo;
 
 class Nav extends Component
 {
@@ -15,6 +16,7 @@ class Nav extends Component
             'livewire.Components.nav',
             [
                 'types' => $types,
+                'contact_info' => ContactInfo::get()->first()
             ]
         );
     }

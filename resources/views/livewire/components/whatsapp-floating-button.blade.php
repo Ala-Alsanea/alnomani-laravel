@@ -11,7 +11,7 @@
         border-radius:50px;
         text-align:center;
         font-size:30px;
-        box-shadow: 2px 2px 3px #999;
+        box-shadow: 2px 2px 3px #3e3e3e70;
         z-index:100;"
         target="_blank">
         <i style="margin-top:16px;" class="fa fa-whatsapp my-float"></i>
