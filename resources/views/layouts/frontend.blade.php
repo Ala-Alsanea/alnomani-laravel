@@ -67,7 +67,7 @@
 <body>
 
     <div class="boxed_wrapper">
-        {{-- @livewire('components.preloader') --}}
+        @livewire('components.preloader')
         @livewire('components.nav')
 
         {{ $slot }}
