@@ -21,8 +21,9 @@
                              <h4 class="footer-widget-title">{{ __('about us') }}</h4>
                              <P>{{ __('Mercedes and Land Rover spare parts company in Riyadh, Saudi Arabia') }}</P>
                              <ul class="social-icon">
-                                 <li><a href="{{$contact_info->facebook_link}}"><i class="fab fa-facebook-f"></i></a></li>
-                                 <li><a href="{{$contact_info->insta_link}}"><i class="fab fa-instagram"></i></a></li>
+                                 <li><a href="{{ $contact_info->facebook_link }}"><i class="fab fa-facebook-f"></i></a>
+                                 </li>
+                                 <li><a href="{{ $contact_info->insta_link }}"><i class="fab fa-instagram"></i></a></li>
                                  {{-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> --}}
                                  <!-- <li><a href="#"><i class="fab fa-dribbble"></i></a></li> -->
                              </ul>
@@ -50,12 +51,21 @@
                              <h4 class="footer-widget-title">{{ __('call us') }}</h4>
                              <ul>
                                  <li><a href="#">{{ __('calling') }}</a></li>
-                                 <li><a href="tel:{{ $contact_info->phone_1 }}"
-                                         class="footer-contact-info">{{ $contact_info->phone_1 }} <br>
-                                         {{$contact_info->phone_2}}</a></li>
+                                 <li>
+                                     <a href="tel:{{ $contact_info->phone_1 }}" class="footer-contact-info">
+                                         {{ $contact_info->phone_1 }}
+
+                                     </a>
+                                 </li>
+                                  <li>
+                                     <a href="tel:{{ $contact_info->phone_2 }}" class="footer-contact-info">
+                                         {{ $contact_info->phone_2 }}
+
+                                     </a>
+                                 </li>
                                  <li><a href="#">{{ __('email') }}</a></li>
-                                 <li><a href="mailto: {{$contact_info->email}}" class="footer-contact-info">
-                                         {{$contact_info->email}}</a></li>
+                                 <li><a href="mailto: {{ $contact_info->email }}" class="footer-contact-info">
+                                         {{ $contact_info->email }}</a></li>
                                  <li><a href="#">{{ __('address') }}</a></li>
                                  <li><a href="#"
                                          class="footer-contact-info">{{ __('Al Riyadh, Saudi Arabia') }}</a></li>
