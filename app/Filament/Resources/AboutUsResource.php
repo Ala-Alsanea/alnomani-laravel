@@ -50,6 +50,7 @@ class AboutUsResource extends Resource
                 Forms\Components\MarkdownEditor::make('main_text')
                     ->label(__('main_text'))
                     ->required()
+                    ->columnSpanFull()
                     ->maxLength(999),
             ]);
     }
@@ -74,8 +75,8 @@ class AboutUsResource extends Resource
                 //
             ])
             ->actions([
-                Tables\Actions\ViewAction::make(),
                 Tables\Actions\EditAction::make(),
+                // Tables\Actions\ViewAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
@@ -96,8 +97,8 @@ class AboutUsResource extends Resource
         return [
             'index' => Pages\ListAboutUs::route('/'),
             'create' => Pages\CreateAboutUs::route('/create'),
-            'view' => Pages\ViewAboutUs::route('/{record}'),
-            'edit' => Pages\EditAboutUs::route('/{record}/edit'),
+            // 'view' => Pages\ViewAboutUs::route('/{record}'),
+            // 'edit' => Pages\EditAboutUs::route('/{record}/edit'),
         ];
     }
     public static function canDelete(Model $record): bool
