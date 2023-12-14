@@ -16,7 +16,10 @@ class Preloader extends Component
             <div class="preloader">
                 <!-- <div class="preloader-close">x</div> -->
                 <div id="handle-preloader" class="handle-preloader home-16"
-                    style="background-image: url(images/banner/banner-4.jpg);">
+                    style="background-image: url(images/817555.jpg);">
+                     <div class="home-two-banner-bg"
+                            style="background-color: black; opacity: .7;">
+                        </div>
                     <div class="animation-preloader">
                         <div class="spinner"></div>
                         <div class="txt-loading">
